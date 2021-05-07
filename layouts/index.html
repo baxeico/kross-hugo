@@ -6,6 +6,17 @@
       <div class="row">
         <div class="col-lg-11 mx-auto">
           <h1 class="text-white font-tertiary">{{ site.Data.homepage.banner.title | safeHTML }}</h1>
+          {{ if site.Data.homepage.banner.occupations }}
+          <h3 class="text-white font-tertiary pt-3">
+            <strong class="cd-headline clip">
+              <span class="cd-words-wrapper waiting">
+                {{ range $index, $elements:= site.Data.homepage.banner.occupations }}
+                <b {{ if eq $index 0 }} class="is-visible" {{ end }}>{{ . }}</b>
+                {{ end }}
+              </span>
+            </strong>
+          </h3>
+          {{ end }}
         </div>
       </div>
     </div>
