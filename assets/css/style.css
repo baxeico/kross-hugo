@@ -174,12 +174,6 @@ body {
   justify-content: center
 }
 
-ol,
-ul {
-  list-style-type: none;
-  margin: 0
-}
-
 img {
   vertical-align: middle;
   border: 0
@@ -660,12 +654,8 @@ blockquote {
 }
 
 .content strong {
-  font-family: playfair display, serif;
-  font-size: 22px;
-  font-weight: 400;
+  font-weight: 800;
   color: #000;
-  display: inherit;
-  line-height: 1.5
 }
 
 .content .highlight pre {
