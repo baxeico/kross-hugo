@@ -1,0 +1,9 @@
+<article class="card shadow">
+    <a href="{{.Permalink}}"><img class="rounded card-img-top" src="{{.Params.image | relURL}}" alt="{{.Title }}"></a>
+    <div class="card-body">
+        <h4 class="card-title mb-1"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a></h4>
+        <p class="text-muted small">{{ .PublishDate.Format "Jan 02, 2006" }}</p>
+        <p class="card-text">{{.Summary}}</p>
+        <a href="{{.Permalink}}" class="btn btn-sm btn-primary">Read More</a>
+    </div>
+</article>
