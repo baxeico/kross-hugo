@@ -1,4 +1,8 @@
 {{- $path := .Get 0 -}}
 {{ with .Site.GetPage $path }}
-{{ partial "post-card" . }}
+<div class="row">
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+        {{ partial "post-card" . }}
+    </div>
+</div>
 {{ end }}
