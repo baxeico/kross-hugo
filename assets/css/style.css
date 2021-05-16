@@ -416,13 +416,21 @@ textarea.form-control {
 }
 
 .navigation {
-  padding: 40px 130px;
+  padding: 10px 100px;
   transition: .3s ease
 }
 
 .navigation.nav-bg {
-  background-color: var(--primary-color);
-  padding: 15px 100px
+  padding: 0px 100px
+}
+
+.navigation .navbar-brand img {
+    max-height: 60px;
+    transition: .3s ease
+  }
+
+.navigation.nav-bg .navbar-brand img {
+  max-height: 40px;
 }
 
 @media(max-width:991px) {
@@ -659,7 +667,7 @@ blockquote {
 }
 
 .content .highlight pre {
-    padding:5px;
+    padding:10px;
 }
 
 .border-thick {
@@ -677,7 +685,7 @@ blockquote {
 }
 
 .page-title {
-  padding: 220px 0 40px
+  padding: 140px 0 30px
 }
 
 @media(max-width:991px) {
@@ -737,4 +745,13 @@ blockquote {
 
 .project-meta p{
   margin-bottom: 0;
+}
+
+#TableOfContents li a {
+    display:inline-block;
+    padding:5px 0;
+}
+
+figure.img-fluid img {
+    max-width:100%;
 }
